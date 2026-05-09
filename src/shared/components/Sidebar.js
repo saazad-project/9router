@@ -138,11 +138,11 @@ export default function Sidebar({ onClose }) {
             <div className="flex items-center justify-center size-9 rounded-[10px] bg-gradient-to-br from-brand-500 to-brand-700 shadow-[var(--shadow-warm)]">
               <span className="material-symbols-outlined text-white text-[20px]">hub</span>
             </div>
-            <div className="flex flex-col">
-              <h1 className="text-lg font-semibold tracking-tight text-text-main">
+            <div className="flex flex-col gap-1">
+              <h1 className="text-base font-bold tracking-tight text-text-main leading-tight">
                 {APP_CONFIG.name}
               </h1>
-              <span className="text-xs text-text-muted">v{APP_CONFIG.version}</span>
+              <span className="text-xs text-text-muted/70 font-medium">v{APP_CONFIG.version}</span>
             </div>
           </Link>
           {updateInfo && (
