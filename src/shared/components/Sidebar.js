@@ -363,8 +363,8 @@ export default function Sidebar({ onClose }) {
         isOpen={showUpdateModal}
         onClose={() => setShowUpdateModal(false)}
         onConfirm={handleUpdate}
-        title="Update 9Router"
-        message={`This will close 9Router and install v${updateInfo?.latestVersion || ""} in a separate window. Continue?`}
+        title="Update ZenConsole"
+        message={`This will close ZenConsole and install v${updateInfo?.latestVersion || ""} in a separate window. Continue?`}
         confirmText="Update"
         cancelText="Cancel"
         variant="primary"
@@ -414,7 +414,7 @@ function UpdateProgress({ status, latestVersion, installCmd, copied, onCopy }) {
   const errorMsg = status?.error;
 
   const steps = [
-    { key: "stopped", label: "Stopped 9Router server", state: "done" },
+    { key: "stopped", label: "Stopped ZenConsole server", state: "done" },
     {
       key: "launched",
       label: "Launched background installer",
@@ -456,7 +456,7 @@ function UpdateProgress({ status, latestVersion, installCmd, copied, onCopy }) {
         </div>
         <div>
           <h2 className="text-lg font-semibold">
-            {done && success ? "Update Completed" : done && !success ? "Update Failed" : "Updating 9Router"}
+            {done && success ? "Update Completed" : done && !success ? "Update Failed" : "Updating ZenConsole"}
           </h2>
           <p className="text-xs text-white/60">
             {done && success
