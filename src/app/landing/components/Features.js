@@ -6,77 +6,29 @@ const FEATURES = [
     title: "Unified Endpoint", 
     desc: "Access all providers via a single standard API URL.", 
     colors: {
-      border: "hover:border-blue-500/50",
-      bg: "hover:bg-blue-500/5",
-      iconBg: "bg-blue-500/10",
-      iconText: "text-blue-500",
-      titleHover: "group-hover:text-blue-400"
+      border: "hover:border-cyan-500/50",
+      bg: "hover:bg-cyan-500/5",
+      iconBg: "bg-cyan-500/10",
+      iconText: "text-cyan-500",
+      titleHover: "group-hover:text-cyan-400"
     }
   },
   { 
     icon: "bolt", 
-    title: "Easy Setup", 
-    desc: "Get up and running in minutes with npx command.", 
+    title: "Intelligent Routing", 
+    desc: "Automatically optimize for latency, cost, or reliability.", 
     colors: {
-      border: "hover:border-orange-500/50",
-      bg: "hover:bg-orange-500/5",
-      iconBg: "bg-orange-500/10",
-      iconText: "text-orange-500",
-      titleHover: "group-hover:text-orange-400"
+      border: "hover:border-teal-500/50",
+      bg: "hover:bg-teal-500/5",
+      iconBg: "bg-teal-500/10",
+      iconText: "text-teal-500",
+      titleHover: "group-hover:text-teal-400"
     }
   },
   { 
     icon: "shield_with_heart", 
-    title: "Model Fallback", 
-    desc: "Automatically switch providers on failure or high latency.", 
-    colors: {
-      border: "hover:border-rose-500/50",
-      bg: "hover:bg-rose-500/5",
-      iconBg: "bg-rose-500/10",
-      iconText: "text-rose-500",
-      titleHover: "group-hover:text-rose-400"
-    }
-  },
-  { 
-    icon: "monitoring", 
-    title: "Usage Tracking", 
-    desc: "Detailed analytics and cost monitoring across all models.", 
-    colors: {
-      border: "hover:border-purple-500/50",
-      bg: "hover:bg-purple-500/5",
-      iconBg: "bg-purple-500/10",
-      iconText: "text-purple-500",
-      titleHover: "group-hover:text-purple-400"
-    }
-  },
-  { 
-    icon: "key", 
-    title: "OAuth & API Keys", 
-    desc: "Securely manage credentials in one vault.", 
-    colors: {
-      border: "hover:border-amber-500/50",
-      bg: "hover:bg-amber-500/5",
-      iconBg: "bg-amber-500/10",
-      iconText: "text-amber-500",
-      titleHover: "group-hover:text-amber-400"
-    }
-  },
-  { 
-    icon: "cloud_sync", 
-    title: "Cloud Sync", 
-    desc: "Sync your configurations across devices instantly.", 
-    colors: {
-      border: "hover:border-sky-500/50",
-      bg: "hover:bg-sky-500/5",
-      iconBg: "bg-sky-500/10",
-      iconText: "text-sky-500",
-      titleHover: "group-hover:text-sky-400"
-    }
-  },
-  { 
-    icon: "terminal", 
-    title: "CLI Support", 
-    desc: "Works with Claude Code, Codex, Cline, Cursor, and more.", 
+    title: "Failover Protection", 
+    desc: "Automatically switch providers on failure or degradation.", 
     colors: {
       border: "hover:border-emerald-500/50",
       bg: "hover:bg-emerald-500/5",
@@ -86,15 +38,63 @@ const FEATURES = [
     }
   },
   { 
+    icon: "monitoring", 
+    title: "Real-Time Analytics", 
+    desc: "Comprehensive tracking and cost monitoring for all requests.", 
+    colors: {
+      border: "hover:border-blue-500/50",
+      bg: "hover:bg-blue-500/5",
+      iconBg: "bg-blue-500/10",
+      iconText: "text-blue-500",
+      titleHover: "group-hover:text-blue-400"
+    }
+  },
+  { 
+    icon: "key", 
+    title: "Secure Vault", 
+    desc: "Enterprise-grade credential management and encryption.", 
+    colors: {
+      border: "hover:border-purple-500/50",
+      bg: "hover:bg-purple-500/5",
+      iconBg: "bg-purple-500/10",
+      iconText: "text-purple-500",
+      titleHover: "group-hover:text-purple-400"
+    }
+  },
+  { 
+    icon: "cloud_sync", 
+    title: "Cloud Sync", 
+    desc: "Synchronize configurations across all your devices.", 
+    colors: {
+      border: "hover:border-indigo-500/50",
+      bg: "hover:bg-indigo-500/5",
+      iconBg: "bg-indigo-500/10",
+      iconText: "text-indigo-500",
+      titleHover: "group-hover:text-indigo-400"
+    }
+  },
+  { 
+    icon: "terminal", 
+    title: "Multi-Tool Support", 
+    desc: "Compatible with Claude, OpenAI, Cline, Cursor, and more.", 
+    colors: {
+      border: "hover:border-amber-500/50",
+      bg: "hover:bg-amber-500/5",
+      iconBg: "bg-amber-500/10",
+      iconText: "text-amber-500",
+      titleHover: "group-hover:text-amber-400"
+    }
+  },
+  { 
     icon: "dashboard", 
     title: "Dashboard", 
-    desc: "Visual dashboard for real-time traffic analysis.", 
+    desc: "Beautiful UI for real-time traffic and performance insights.", 
     colors: {
-      border: "hover:border-fuchsia-500/50",
-      bg: "hover:bg-fuchsia-500/5",
-      iconBg: "bg-fuchsia-500/10",
-      iconText: "text-fuchsia-500",
-      titleHover: "group-hover:text-fuchsia-400"
+      border: "hover:border-rose-500/50",
+      bg: "hover:bg-rose-500/5",
+      iconBg: "bg-rose-500/10",
+      iconText: "text-rose-500",
+      titleHover: "group-hover:text-rose-400"
     }
   },
 ];
@@ -104,9 +104,9 @@ export default function Features() {
     <section className="py-24 px-6" id="features">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Powerful Features</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Enterprise Features</h2>
           <p className="text-gray-400 max-w-xl text-lg">
-            Everything you need to manage your AI infrastructure in one place, built for scale.
+            Everything you need for premium AI infrastructure management, built for production scale.
           </p>
         </div>
         
@@ -114,7 +114,7 @@ export default function Features() {
           {FEATURES.map((feature) => (
             <div 
               key={feature.title}
-              className={`p-6 rounded-xl bg-[#23180f] border border-[#3a2f27] ${feature.colors.border} ${feature.colors.bg} transition-all duration-300 group`}
+              className={`p-6 rounded-xl bg-[#132a3a] border border-[#054a5f] ${feature.colors.border} ${feature.colors.bg} transition-all duration-300 group`}
             >
               <div className={`w-10 h-10 rounded-lg ${feature.colors.iconBg} flex items-center justify-center mb-4 ${feature.colors.iconText} group-hover:scale-110 transition-transform duration-300`}>
                 <span className="material-symbols-outlined">{feature.icon}</span>

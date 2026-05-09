@@ -15,8 +15,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "9Router - AI Infrastructure Management",
-  description: "One endpoint for all your AI providers. Manage keys, monitor usage, and scale effortlessly.",
+  title: "ZenConsole - AI Infrastructure Management",
+  description: "Premium platform for managing AI providers. Unified endpoint, secure key management, real-time monitoring, and effortless scaling.",
   icons: {
     icon: "/favicon.svg",
   },

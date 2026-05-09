@@ -4,33 +4,33 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* ============================================================
-   9Router palette — adopted from 9remote_private/web
-   Brand orange (dark) / soft coral (light), neutral warm bases
+   ZenConsole palette — Premium teal/cyan with calm elegance
+   Brand teal #0B7C8F (dark) / cyan #5DD9E8 (light), neutral cool bases
    ============================================================ */
 :root {
-  /* Brand scale (light) - centered on #E56A4A */
-  --color-brand-50: #fdf1ed;
-  --color-brand-100: #fadccf;
-  --color-brand-200: #f4b59c;
-  --color-brand-300: #ee8d6a;
-  --color-brand-400: #ea7855;
-  --color-brand-500: #E56A4A;
-  --color-brand-600: #cc5236;
-  --color-brand-700: #a64027;
-  --color-brand-800: #7a2f1d;
-  --color-brand-900: #4d1e12;
+  /* Brand scale (light) - centered on #0B7C8F (teal) with cyan accent */
+  --color-brand-50: #ecf7f9;
+  --color-brand-100: #cce9f1;
+  --color-brand-200: #a8dbe8;
+  --color-brand-300: #5dd9e8;
+  --color-brand-400: #2cb3d8;
+  --color-brand-500: #0B7C8F;
+  --color-brand-600: #066b7a;
+  --color-brand-700: #054a5f;
+  --color-brand-800: #032f43;
+  --color-brand-900: #011a26;
 
   /* Primary (legacy alias for backward compat with existing components) */
   --color-primary: var(--color-brand-500);
   --color-primary-hover: var(--color-brand-600);
 
   /* Surfaces & backgrounds (light) */
-  --color-bg: #FDFAF6;
-  --color-bg-alt: #F7F3EE;
+  --color-bg: #F8FBFC;
+  --color-bg-alt: #F0F7F9;
   --color-surface: #ffffff;
   --color-surface-2: #f4f4f5;
   --color-surface-3: #e7e7e9;
-  --color-sidebar: rgba(244, 241, 236, 0.85);
+  --color-sidebar: rgba(240, 247, 249, 0.85);
 
   /* Borders */
   --color-border: #e5e7eb;
@@ -66,28 +66,28 @@
 }
 
 .dark {
-  /* Brand scale (dark) - centered on #E56A4A, same as light for consistency */
-  --color-brand-50: #fdf1ed;
-  --color-brand-100: #fadccf;
-  --color-brand-200: #f4b59c;
-  --color-brand-300: #ee8d6a;
-  --color-brand-400: #ea7855;
-  --color-brand-500: #E56A4A;
-  --color-brand-600: #cc5236;
-  --color-brand-700: #a64027;
-  --color-brand-800: #7a2f1d;
-  --color-brand-900: #4d1e12;
+  /* Brand scale (dark) - centered on #0B7C8F (teal) */
+  --color-brand-50: #ecf7f9;
+  --color-brand-100: #cce9f1;
+  --color-brand-200: #a8dbe8;
+  --color-brand-300: #5dd9e8;
+  --color-brand-400: #2cb3d8;
+  --color-brand-500: #0B7C8F;
+  --color-brand-600: #066b7a;
+  --color-brand-700: #054a5f;
+  --color-brand-800: #032f43;
+  --color-brand-900: #011a26;
 
-  --color-primary: #E56A4A;
-  --color-primary-hover: #cc5236;
+  --color-primary: #0B7C8F;
+  --color-primary-hover: #066b7a;
 
-  /* Surfaces (dark - Claude-like neutral warm) */
-  --color-bg: #1a1a1a;
-  --color-bg-alt: #1F1F1E;
-  --color-surface: #262626;
-  --color-surface-2: #303030;
-  --color-surface-3: #3a3a3a;
-  --color-sidebar: rgba(30, 30, 30, 0.85);
+  /* Surfaces (dark - cool neutral) */
+  --color-bg: #0F1318;
+  --color-bg-alt: #131820;
+  --color-surface: #1a1f26;
+  --color-surface-2: #212933;
+  --color-surface-3: #2a3340;
+  --color-sidebar: rgba(19, 24, 32, 0.85);
 
   --color-border: #333333;
   --color-border-subtle: #2a2a2a;
@@ -190,11 +190,11 @@ body {
 
 /* Selection - brand-tinted */
 ::selection {
-  background-color: rgba(229, 106, 74, 0.25);
+  background-color: rgba(11, 124, 143, 0.25);
   color: var(--color-primary);
 }
 .dark ::selection {
-  background-color: rgba(229, 106, 74, 0.3);
+  background-color: rgba(11, 124, 143, 0.3);
   color: var(--color-brand-300);
 }
 
@@ -221,19 +221,19 @@ input, textarea {
 /* Thin horizontal scrollbar - brand colored */
 .scroll-thin-x {
   scrollbar-width: thin;
-  scrollbar-color: rgba(229, 106, 74, 0.55) transparent;
+  scrollbar-color: rgba(11, 124, 143, 0.55) transparent;
 }
 .dark .scroll-thin-x {
-  scrollbar-color: rgba(229, 106, 74, 0.55) transparent;
+  scrollbar-color: rgba(11, 124, 143, 0.55) transparent;
 }
 .scroll-thin-x::-webkit-scrollbar { height: 3px; }
 .scroll-thin-x::-webkit-scrollbar-track { background: transparent; }
 .scroll-thin-x::-webkit-scrollbar-thumb {
-  background: rgba(229, 106, 74, 0.55);
+  background: rgba(11, 124, 143, 0.55);
   border-radius: 3px;
 }
 .dark .scroll-thin-x::-webkit-scrollbar-thumb {
-  background: rgba(229, 106, 74, 0.55);
+  background: rgba(11, 124, 143, 0.55);
 }
 
 /* Reusable elevated card */
@@ -322,12 +322,12 @@ button {
 
 @keyframes border-glow {
   0%, 100% {
-    box-shadow: 0 0 5px rgba(229, 106, 74, 0.3), 0 0 10px rgba(229, 106, 74, 0.2);
-    border-color: rgba(229, 106, 74, 0.5);
+    box-shadow: 0 0 5px rgba(11, 124, 143, 0.3), 0 0 10px rgba(11, 124, 143, 0.2);
+    border-color: rgba(11, 124, 143, 0.5);
   }
   50% {
-    box-shadow: 0 0 10px rgba(229, 106, 74, 0.5), 0 0 20px rgba(229, 106, 74, 0.3);
-    border-color: rgba(229, 106, 74, 0.8);
+    box-shadow: 0 0 10px rgba(11, 124, 143, 0.5), 0 0 20px rgba(11, 124, 143, 0.3);
+    border-color: rgba(11, 124, 143, 0.8);
   }
 }
 .animate-border-glow { animation: border-glow 2s ease-in-out infinite; }
@@ -360,8 +360,8 @@ button {
   100% { transform: translateX(220%) skewX(-20deg); }
 }
 @keyframes ctaGlowPulse {
-  0%, 100% { box-shadow: 0 8px 24px -8px rgba(229, 106, 74, 0.45), 0 0 0 0 rgba(229, 106, 74, 0.5); }
-  50% { box-shadow: 0 12px 32px -8px rgba(229, 106, 74, 0.6), 0 0 0 8px rgba(229, 106, 74, 0); }
+  0%, 100% { box-shadow: 0 8px 24px -8px rgba(11, 124, 143, 0.45), 0 0 0 0 rgba(11, 124, 143, 0.5); }
+  50% { box-shadow: 0 12px 32px -8px rgba(11, 124, 143, 0.6), 0 0 0 8px rgba(11, 124, 143, 0); }
 }
 .btn-cta {
   position: relative;
@@ -387,13 +387,13 @@ button {
 .dot-grid-bg {
   background-color: var(--color-bg);
   background-image:
-    radial-gradient(circle at 15% 20%, rgba(229, 106, 74, 0.10) 0%, transparent 40%),
-    radial-gradient(circle at 85% 80%, rgba(229, 106, 74, 0.06) 0%, transparent 40%);
+    radial-gradient(circle at 15% 20%, rgba(11, 124, 143, 0.10) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(11, 124, 143, 0.06) 0%, transparent 40%);
 }
 .dark .dot-grid-bg {
   background-image:
-    radial-gradient(circle at 15% 20%, rgba(229, 106, 74, 0.18) 0%, transparent 40%),
-    radial-gradient(circle at 85% 80%, rgba(229, 106, 74, 0.10) 0%, transparent 40%);
+    radial-gradient(circle at 15% 20%, rgba(11, 124, 143, 0.18) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(11, 124, 143, 0.10) 0%, transparent 40%);
 }
 
 /* Landing-style faint grid overlay (use absolute pos inside relative parent) */
